@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "AIrynok",
+    "version": "1.0",
+    "description": "Find similar product offers when shopping online",
+    "icons": {
+        "128": "logo.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": ["activeTab"],
+    "browser_action": {},
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["content.js"]
+    }]
+}
